@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+    @font-face {
+        font-family: "Quicksand";
+        src: url("../assets/fonts/Quicksand-VariableFont_wght.ttf") format('truetype');
+    } 
+} */
+
+.active-link{
+    @apply   border-b-2 border-emerald-500 dark:border-emerald-500 text-emerald-500  dark:text-slate-200 md:border-slate-200 dark:md:border-emerald-500 md:text-emerald-500  dark:md:text-emerald-500  
+}
+
+
+
