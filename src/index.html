@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="../dist/output.css" rel="stylesheet" />
-
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link href="./build.css" rel="stylesheet" />
     <!-- Primary Meta Tags -->
     <title>Vanilla Landing Page</title>
     <link rel="icon" href="./assets/img/logo.png">
@@ -96,7 +96,7 @@
       <span class="loader"></span>
     </div>
     <!-- Navbar -->
-    <div class="bg-green-500 dark:bg-slate-900 Nav-control animate__animated z-10">
+    <div class="bg-green-500 dark:bg-slate-900 Nav-control animate__animated z-50">
       <div
         class="container mx-auto px-5 md:px-0 lg:px-32 flex justify-between items-center"
       >
@@ -181,7 +181,7 @@
           </svg>
         </div>
         <!-- Menu Text -->
-        <div id="mobile-slide" class="flex fixed dark:bg-gray-900 dark:text-white md:static h-screen md:h-auto w-full top-0  -left-full bg-white md:bg-transparent dark:md:bg-transparent  justify-center items-center z-30  duration-300">
+        <div id="mobile-slide" class="flex fixed dark:bg-gray-900 dark:text-white md:static h-screen md:h-auto w-full top-0  -left-full bg-white md:bg-transparent dark:md:bg-transparent  justify-center items-center z-10  duration-300">
           <div id="mobile-slide-close" class="absolute top-3 left-3 md:hidden border rounded-full w-9 h-9 flex justify-center items-center">
             <i class="fa-solid fa-xmark  "></i>
           </div>
@@ -201,17 +201,12 @@
         <!-- Dark Mode -->
         <div class="flex items-center justify-center space-x-3">
           <button id="dark-switch"  onclick="toggleTheme()" class="shadow w-[55px] flex items-center transition duration-200 rounded-full m-5 bg-slate-800 p-1">
-            <div
-              id="dark-switch-icon"
-              class="bg-slate-50 w-5 h-5 rounded-full transform transition duration-200 flex justify-center items-center"
-            >
+            <div  id="dark-switch-icon" class="bg-slate-50 w-5 h-5 rounded-full transform transition duration-200 flex justify-center items-center"> 
+               <!-- translate-x-full rotate-[360deg] bg-slate-900 -->
               <i class="fa-regular fa-sun"></i>
             </div>
-            <h6
-              id="dark-text"
-              class="text-slate-200 dark:text-slate-900 translate-x-1 text-sm"
-            >
-              OFF
+            <h6 id="dark-text"  class="text-slate-200 dark:text-slate-900 translate-x-1 text-sm">
+              FF
             </h6>
           </button>
           <div id="mobile-menu" class="flex md:hidden ">
